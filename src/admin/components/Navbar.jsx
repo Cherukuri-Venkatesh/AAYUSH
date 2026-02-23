@@ -1,5 +1,5 @@
 import React, { useContext } from 'react'
-import { assets } from '../../patient/assets/assets'
+import { assets } from '../assets/assets'
 import { DoctorContext } from '../context/DoctorContext'
 import { AdminContext } from '../context/AdminContext'
 import { useNavigate } from 'react-router-dom'
@@ -23,7 +23,7 @@ const Navbar = () => {
     <div className='flex justify-between items-center px-4 sm:px-10 py-3 border-b bg-white'>
       <div className='flex items-center gap-2 text-xs'>
        <div className="flex items-center gap-3 cursor-pointer">
-        <img className="w-12" src="new.png" alt="Ayushi Logo" />
+        <img className="w-12" src="ayushilogo.png" alt="Ayushi Logo" />
         <h1 className="text-2xl font-bold text-blue-700">Aayush</h1>
       </div>
         <p className='border px-2.5 py-0.5 rounded-full border-gray-500 text-gray-600'>{aToken ? 'Admin' : 'Doctor'}</p>
